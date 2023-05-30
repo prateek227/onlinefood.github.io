@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* CSS variables */
+:root {
+    --navbar-height: 60px;
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    position: relative;
+
+}
+
+/* navigation bar logo and image */
+#logo {
+    margin: 3px 5px;
+
+}
+
+#logo img {
+    width: 100px;
+    margin: 3px 3px;
+
+}
+
+/* navigation list styling */
+
+#navbar ul {
+    display: flex;
+    font-family: 'Baloo Bhai 2', cursive;
+
+}
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+    
+}
+
+#navbar ul li {
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+#navbar ul li a {
+    padding: 13px 25px;
+    color: white;
+    display: block;
+    border-radius: 2px;
+    text-decoration: none;
+}
+#navbar ul li a:hover{
+    color: rgb(12, 10, 10);
+    background-color: whitesmoke;
+    border-radius: 25px;
+}
+/* home section */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 500px;
+    justify-content: center;
+    align-items: center;
+}
+#home::before{
+    content: "";
+   background: url('bg1.jpg') no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.89;
+}
+#home h1{
+    color: rgb(245, 247, 248);
+    text-align: center;
+    font-size: 3rem;
+    font-family: 'Bree Serif', serif;
+    
+}
+#home p{
+    color: rgb(237, 242, 246);
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Bree Serif', serif;
+}
+/* services section */
+#services{
+    margin: 16px 15px;
+    display: flex;
+}
+#services .box{
+    border: 2px solid red;
+}
+#services .box img{
+    width: 200px;
+    height: 170px;
+    display: block;
+    margin: auto;
+}
+#services
+
+/* Utility class */
+.h-secondary{
+    font-size:2.8rem;
+    padding: 12px;
+}
+.h-primar{
+    margin: 30px;
+   font-size: 3.8rem;
+    /* color: aqua; */
+}
+.btn{
+    padding: 6px 20px;
+    border: 2px solid  white;
+    background-color: brown;
+    color: white;
+    margin: 17px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.center{
+    text-align: center;
+}
+.services-container{
+    padding-top: 133px;
+}
